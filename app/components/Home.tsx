@@ -1,6 +1,6 @@
 import Link from "next/link";
-import { PostType } from "../types";
 import fetchALLFeedbacks from "../hooks/useFeedback";
+import { PostType } from "../types";
 
 export default async function Home() {
   const feedbacks = await fetchALLFeedbacks();
@@ -11,7 +11,7 @@ export default async function Home() {
       </div>
       {/* Link */}
       <div>
-        <Link href={"/feedback/add"}>ブログ新規作成</Link>
+        <Link href={"/feedback"}>ブログ新規作成</Link>
       </div>
 
       <div>
